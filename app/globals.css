@@ -78,3 +78,15 @@
 .slick-slide > div {
   margin: 0 10px;
 }
+
+@font-face {
+  font-family: "Sedan SC";
+  src: url("/fonts/SedanSC-Regular.ttf") format("truetype");
+
+  /* Add additional font properties here if needed */
+}
+
+/* Apply Sedan SC font to specific elements */
+body {
+  font-family: "Sedan SC";
+}
