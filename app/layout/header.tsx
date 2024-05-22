@@ -20,15 +20,15 @@ const socials = [
 const navItems = [
   {
     label: "About",
-    url: "/about",
+    url: "/",
   },
   {
     label: "Gallery",
-    url: "/shop",
+    url: "/",
   },
   {
     label: "Contact",
-    url: "/contact",
+    url: "/",
   },
 ];
 
