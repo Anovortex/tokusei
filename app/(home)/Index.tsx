@@ -9,84 +9,84 @@ export default function () {
     {
       image: "/Products/2nd Lot/1.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 1",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/2.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 2 ",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/3.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 3",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/4.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 4",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/5.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 5 ",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/6.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 6 ",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/7.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 7 ",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/8.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 8",
-      price: "1000",
+      price: "450৳",
     },
   ];
   const topCollection = [
     {
       image: "/Products/2nd Lot/1.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 1",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/2.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 2 ",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/3.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 3",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/4.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 4",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/5.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 5 ",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/6.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 6 ",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/7.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 7 ",
-      price: "1000",
+      price: "450৳",
     },
     {
       image: "/Products/2nd Lot/8.Tshirt Mockup with Watermark.jpg",
       productName: "T-Shirt 8",
-      price: "1000",
+      price: "450৳",
     },
   ];
   return (
