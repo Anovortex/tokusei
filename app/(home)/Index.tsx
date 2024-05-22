@@ -91,12 +91,12 @@ export default function () {
   ];
   return (
     <div className="w-full">
-      <div className=" px-36">
+      <div className="lg:px-36 ">
         <Header />
       </div>
       <ImagesSliderDemo />
       <div className="md:py-28 md:px-36">
-        <h1 className=" px-5 text-6xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 pt-10">
+        <h1 className=" px-5 text-6xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 pt-20 lg:pt-10">
           New Arrivals
         </h1>
 
@@ -119,7 +119,7 @@ export default function () {
         />
       </div>
       <div className="">
-        <h1 className=" md:pt-28 relative font-bold text-7xl md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 ">
+        <h1 className="  pt-20  md:pt-28 relative font-bold text-7xl md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 ">
           Top Collection
         </h1>
         <div className="md:py-10 md:px-36">
