@@ -51,6 +51,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       {
         breakpoint: 600,
         settings: {
+          dots: true,
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
@@ -59,6 +60,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       {
         breakpoint: 480,
         settings: {
+          dots: true,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
