@@ -40,8 +40,8 @@ export default function Footer() {
       </div>
       <div className="mx-auto text-center items-center flex flex-col text-2xl gap-5">
         <span>Ring Road,Mohammadpur, Dhaka- 1207</span>
-        <span>+880 177 2206234</span>
-        <a href="mailto:info@tokusei.karikr.com">info@tokusei.karikr.com</a>
+        <a href="https://wa.me/8801772206234">+880 177 2206234</a>
+        <a href="mailto:tokuseishop@gmail.com">tokuseishop@gmail.com</a>
       </div>
       <div className="item-center mx-auto py-10">
         <div className=" flex flex-row justify-center gap-5 md:text-xl ">
