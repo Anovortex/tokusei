@@ -35,7 +35,7 @@ const navItems = [
 export default function Footer() {
   return (
     <div className=" bg-stone-700">
-      <div className=" w-[200px] mx-auto py-20">
+      <div className=" w-[200px] mx-auto py-10">
         <Image src="/Logo/logo.png" width={372} height={368} alt="footerLogo" />
       </div>
       <div className="mx-auto text-center items-center text-lg flex flex-col md:text-2xl xl:gap-5">

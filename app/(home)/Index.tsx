@@ -119,21 +119,21 @@ export default function () {
         />
       </div>
       <div className="">
-        <h1 className="  pt-20  md:pt-28 relative font-bold text-7xl md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 ">
+        <h1 className="  pt-20  md:pt-28 relative font-bold text-6xl md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 ">
           Top Collection
         </h1>
-        <div className="md:py-10 md:px-36">
+        <div className="py-5 px-4 md:py-10 md:px-36">
           <div className="md:py-10 md:px-36">
             <div className=" py-10 px-10 lg:px-0 bg-stone-700 justify-center flex flex-row flex-wrap gap-5 my-auto rounded-2xl">
               {topCollection.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-stone-900 rounded-2xl w-[360px] h-[434px] item-center "
+                  className="bg-stone-900 rounded-2xl w-[300px] h-[370px] md:w-[360px] md:h-[434px] item-center "
                 >
                   <img
                     src={item.image}
                     alt={item.productName}
-                    className="w-[300px] h-[300px] mx-auto my-5 items-center rounded-xl "
+                    className=" px-5 w-[250px] h-[250px] md:w-[300px] md:h-[300px] mx-auto my-5 items-center md:rounded-xl "
                   />
                   <h1 className="text-center flex flex-col justify-between">
                     <span>{item.productName}</span>
@@ -146,7 +146,9 @@ export default function () {
           </div>
         </div>
       </div>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
