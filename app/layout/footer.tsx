@@ -38,7 +38,7 @@ export default function Footer() {
       <div className=" w-[200px] mx-auto py-20">
         <Image src="/Logo/logo.png" width={372} height={368} alt="footerLogo" />
       </div>
-      <div className="mx-auto text-center items-center flex flex-col text-2xl gap-5">
+      <div className="mx-auto text-center items-center text-lg flex flex-col md:text-2xl xl:gap-5">
         <span>Ring Road,Mohammadpur, Dhaka- 1207</span>
         <a href="https://wa.me/8801772206234">+880 177 2206234</a>
         <a href="mailto:tokuseishop@gmail.com">tokuseishop@gmail.com</a>
@@ -58,7 +58,7 @@ export default function Footer() {
           ))}
         </div>
         <div>
-          <div className=" py-5 md:py-10 text-xl md:text-2xl  flex flex-row justify-center gap-10  ">
+          <div className=" py-5 md:py-10 text-lg md:text-2xl  flex flex-row justify-center gap-10  ">
             {navItems.map((navItems, index) => (
               <Link href={navItems.url} key={index}>
                 <h1 className=" lg:hover:scale-125 hover:text-stone-300 transition-all">
@@ -68,7 +68,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className=" py-6 mx-auto    ">
+        <div className=" lg:py-6 mx-auto    ">
           <div className="text-center">
             <Link href="https://www.instagram.com/tokuseishop/">
               <div className="relative px-5 py-3 overflow-hidden font-medium text-white bg-transparent border border-gray-100 rounded-lg shadow-inner group inline-block">

@@ -124,7 +124,7 @@ export default function () {
         </h1>
         <div className="md:py-10 md:px-36">
           <div className="md:py-10 md:px-36">
-            <div className=" py-10 px-10 lg:px-0 bg-stone-700 justify-center flex flex-row flex-wrap gap-5 my-auto">
+            <div className=" py-10 px-10 lg:px-0 bg-stone-700 justify-center flex flex-row flex-wrap gap-5 my-auto rounded-2xl">
               {topCollection.map((item, index) => (
                 <div
                   key={index}
