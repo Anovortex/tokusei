@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className=" text-sm text-center mx-auto">
+      <div className="pb-5 text-sm text-center mx-auto">
         Copyright © 2024 Tokusei®. All rights reserved.
       </div>
     </div>

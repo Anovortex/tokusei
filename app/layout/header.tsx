@@ -1,6 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { SiPinterest } from "react-icons/si";
+import { useRouter } from "next/navigation";
 import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
 
 const socials = [
@@ -24,7 +26,7 @@ const navItems = [
   },
   {
     label: "Gallery",
-    url: "/",
+    url: "/Gallery",
   },
   {
     label: "Contact",
@@ -33,6 +35,7 @@ const navItems = [
 ];
 
 export default function Header() {
+  const router = useRouter(); // Using useNavigation instead of useRouter
   return (
     <nav className="w-full md:px-20 py-5">
       <div className="flex flex-col md:flex-row justify-between items-center ">
@@ -46,25 +49,30 @@ export default function Header() {
           />
         </div>
         <div className=" py-5 md:py-0 text-xl md:text-2xl  flex flex-row justify-between gap-10  ">
-          {navItems.map((navItems, index) => (
-            <Link href={navItems.url} key={index}>
-              <h1 className=" lg:hover:scale-125 hover:text-stone-300 transition-all">
-                {navItems.label}
-              </h1>
-            </Link>
-          ))}
+          {navItems.map(
+            (
+              navItem,
+              index // Changed variable name to navItem to avoid confusion
+            ) => (
+              <Link href={navItem.url} key={index}>
+                <h1 className=" lg:hover:scale-125 hover:text-stone-300 transition-all">
+                  {navItem.label}
+                </h1>
+              </Link>
+            )
+          )}
         </div>
         <div className=" flex flex-row justify-between gap-5 md:text-xl text-lg">
           {socials.map((social, index) => (
-            <Link
+            <a // Changed Link to anchor tag since it's for external URLs
               className="hover:scale-150 transition-all"
               href={social.url}
               key={index}
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer" // Added noreferrer for security
             >
               <social.icon />
-            </Link>
+            </a>
           ))}
         </div>
       </div>
