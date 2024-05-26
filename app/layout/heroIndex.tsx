@@ -1,11 +1,6 @@
 "use client";
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
-import { ImagesSlider } from "@/components/ui/images-slider";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-
 export function ImagesSliderDemo() {
   return (
     <div className="py-5 item-center">

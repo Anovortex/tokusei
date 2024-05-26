@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Header from "../layout/header";
 import ImageCarousel from "../layout/imageCarousel";
-import { ImagesSliderDemo } from "../layout/imageSlider";
+import { ImagesSliderDemo } from "../layout/heroIndex";
 import Footer from "../layout/footer";
 
 export default function () {
