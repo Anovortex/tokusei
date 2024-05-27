@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
 
 const socials = [
@@ -11,7 +10,6 @@ const socials = [
     url: "https://facebook.com/",
     icon: SlSocialFacebook,
   },
-
   {
     label: "Instagram",
     url: "https://instagram.com/",
@@ -19,23 +17,18 @@ const socials = [
   },
 ];
 
-const navItems = [
-  {
-    label: "About",
-    url: "/",
-  },
-  {
-    label: "Gallery",
-    url: "/Gallery",
-  },
-  {
-    label: "Contact",
-    url: "/",
-  },
-];
+interface NavItem {
+  label: string;
+  url: string;
+}
 
-export default function Header() {
-  const router = useRouter(); // Using useNavigation instead of useRouter
+interface HeaderProps {
+  header: any; // Adjust the type based on your actual header prop
+  dark: boolean;
+  navItems: NavItem[];
+}
+
+const Header: React.FC<HeaderProps> = ({ header, dark, navItems }) => {
   return (
     <nav className="w-full md:px-20 py-5">
       <div className="flex flex-col md:flex-row justify-between items-center ">
@@ -48,28 +41,23 @@ export default function Header() {
             className=""
           />
         </div>
-        <div className=" py-5 md:py-0 text-xl md:text-2xl  flex flex-row justify-between gap-10  ">
-          {navItems.map(
-            (
-              navItem,
-              index // Changed variable name to navItem to avoid confusion
-            ) => (
-              <Link href={navItem.url} key={index}>
-                <h1 className=" lg:hover:scale-125 hover:text-stone-300 transition-all">
-                  {navItem.label}
-                </h1>
-              </Link>
-            )
-          )}
+        <div className="py-5 md:py-0 text-xl md:text-2xl flex flex-row justify-between gap-10">
+          {navItems.map((navItem, index) => (
+            <Link href={navItem.url} key={index}>
+              <h1 className="lg:hover:scale-125 hover:text-stone-300 transition-all">
+                {navItem.label}
+              </h1>
+            </Link>
+          ))}
         </div>
-        <div className=" flex flex-row justify-between gap-5 md:text-xl text-lg">
+        <div className="flex flex-row justify-between gap-5 md:text-xl text-lg">
           {socials.map((social, index) => (
-            <a // Changed Link to anchor tag since it's for external URLs
+            <a
               className="hover:scale-150 transition-all"
               href={social.url}
               key={index}
               target="_blank"
-              rel="noopener noreferrer" // Added noreferrer for security
+              rel="noopener noreferrer"
             >
               <social.icon />
             </a>
@@ -78,4 +66,6 @@ export default function Header() {
       </div>
     </nav>
   );
-}
+};
+
+export default Header;

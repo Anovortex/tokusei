@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import Provider from "../Providers/Provider"; // Adjust the import path as necessary
-import Header from "../layout/header";
 import { ImagesSliderDemo } from "../layout/heroIndex";
 import ImageCarousel from "../layout/imageCarousel";
 
@@ -53,7 +52,7 @@ const HomePage: React.FC = () => {
 
   return (
     <Provider
-      title="Home Page"
+      title="HOME"
       description="Welcome to Tokusei Shop"
       header={header}
       footer={footer}
@@ -61,9 +60,6 @@ const HomePage: React.FC = () => {
       navItems={navItems}
     >
       <div className="w-full">
-        <div className="lg:px-36">
-          <Header />
-        </div>
         <ImagesSliderDemo />
         <div className="md:py-28 md:px-36">
           <h1 className="px-5 text-6xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 pt-20 lg:pt-10">
