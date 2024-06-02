@@ -189,13 +189,13 @@ const HomePage: React.FC = () => {
           <h1 className="pt-20 md:pt-28 relative font-bold text-6xl md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             Top Collection
           </h1>
-          <div className="py-5 px-4 md:py-10 md:px-36">
+          <div className="py-5 px-4 md:py-10 lg:px-36">
             <div className="md:py-10 md:px-36">
               <div className="py-10 px-10 lg:px-0 bg-stone-700 justify-center flex flex-row flex-wrap gap-5 my-auto rounded-2xl">
                 {topCollection.map((item, index) => (
                   <div
                     key={index}
-                    className="bg-stone-900 rounded-2xl w-[300px] h-[370px] md:w-[360px] md:h-[434px] item-center"
+                    className="bg-stone-900 rounded-2xl w-[300px] h-[370px] md:w-[360px] md:h-[410px] item-center"
                   >
                     <img
                       src={item.image}
