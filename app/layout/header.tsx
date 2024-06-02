@@ -2,17 +2,19 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { IoLogoWhatsapp } from "react-icons/io5";
+import { SiGmail } from "react-icons/si";
 import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
 
 const socials = [
   {
     label: "facebook",
-    url: "https://facebook.com/",
+    url: "https://www.facebook.com/tokuseistore",
     icon: SlSocialFacebook,
   },
   {
     label: "Instagram",
-    url: "https://instagram.com/",
+    url: "https://www.instagram.com/tokuseishop/",
     icon: SlSocialInstagram,
   },
 ];
