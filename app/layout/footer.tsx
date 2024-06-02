@@ -9,7 +9,6 @@ const socials = [
     url: "https://facebook.com/",
     icon: SlSocialFacebook,
   },
-
   {
     label: "Instagram",
     url: "https://instagram.com/",
@@ -17,34 +16,36 @@ const socials = [
   },
 ];
 
-const navItems = [
-  {
-    label: "About",
-    url: "/",
-  },
-  {
-    label: "Gallery",
-    url: "/",
-  },
-  {
-    label: "Contact",
-    url: "/",
-  },
-];
+interface NavItem {
+  label: string;
+  url: string;
+}
 
-export default function Footer() {
+interface FooterProps {
+  footer: any; // Replace 'any' with the correct type for your footer prop
+  dark: boolean;
+
+  navItems: NavItem[];
+}
+
+const Footer: React.FC<FooterProps> = ({
+  footer,
+  dark,
+
+  navItems,
+}) => {
   return (
-    <div className=" bg-stone-700">
-      <div className=" w-[200px] mx-auto py-10">
+    <div className={`bg-stone-700 ${dark ? "dark-mode" : ""} `}>
+      <div className="w-[200px] mx-auto py-10">
         <Image src="/Logo/logo.png" width={372} height={368} alt="footerLogo" />
       </div>
       <div className="mx-auto text-center items-center text-lg flex flex-col md:text-2xl xl:gap-5">
-        <span>Ring Road,Mohammadpur, Dhaka- 1207</span>
+        <span>Ring Road, Mohammadpur, Dhaka-1207</span>
         <a href="https://wa.me/8801772206234">+880 177 2206234</a>
         <a href="mailto:tokuseishop@gmail.com">tokuseishop@gmail.com</a>
       </div>
       <div className="item-center mx-auto py-10">
-        <div className=" flex flex-row justify-center gap-5 md:text-xl ">
+        <div className="flex flex-row justify-center gap-5 md:text-xl">
           {socials.map((social, index) => (
             <Link
               className="hover:scale-150 transition-all text-2xl"
@@ -58,17 +59,17 @@ export default function Footer() {
           ))}
         </div>
         <div>
-          <div className=" py-5 md:py-10 text-lg md:text-2xl  flex flex-row justify-center gap-10  ">
-            {navItems.map((navItems, index) => (
-              <Link href={navItems.url} key={index}>
-                <h1 className=" lg:hover:scale-125 hover:text-stone-300 transition-all">
-                  {navItems.label}
+          <div className="py-5 md:py-10 text-lg md:text-2xl flex flex-row justify-center gap-10">
+            {navItems.map((navItem, index) => (
+              <Link href={navItem.url} key={index}>
+                <h1 className="lg:hover:scale-125 hover:text-stone-300 transition-all">
+                  {navItem.label}
                 </h1>
               </Link>
             ))}
           </div>
         </div>
-        <div className=" lg:py-6 mx-auto    ">
+        <div className="lg:py-6 mx-auto">
           <div className="text-center">
             <Link href="https://www.instagram.com/tokuseishop/">
               <div className="relative px-5 py-3 overflow-hidden font-medium text-white bg-transparent border border-gray-100 rounded-lg shadow-inner group inline-block">
@@ -85,9 +86,11 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className=" text-sm text-center mx-auto">
+      <div className="pb-5 text-sm text-center mx-auto">
         Copyright © 2024 Tokusei®. All rights reserved.
       </div>
     </div>
   );
-}
+};
+
+export default Footer;
