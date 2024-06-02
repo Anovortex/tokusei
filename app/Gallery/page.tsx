@@ -15,7 +15,7 @@ const navItems = [
   },
   {
     label: "Contact",
-    url: "/",
+    url: "#contact",
   },
 ];
 
@@ -126,20 +126,21 @@ export default function () {
               height={1080 / 1.5}
               alt="heroImage"
               layout=" responsive"
-              className=" absolute opacity-30 mx-auto md:h-[728px] h-[300px]"
+              className=" absolute opacity-30 mx-auto md:h-[728px] h-[350px] "
             />
           </div>
           <div className="relative md:py-48">
             <div className="  text-6xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-              TOKUSEI
+              Gallery
             </div>{" "}
             <div>
               <p className="text-sm w-5/6 md:w-[656px] text-center item-center mx-auto ">
-                Step into Anime Couture, where style meets storytelling. Explore
-                premium garments that blend comfort with character. Redefine
-                your wardrobe with timeless pieces inspired by your favorite
-                anime. Shop now and embrace the essence of anime-inspired
-                fashion.
+                Discover the Gallery at Tokusei: a visual journey where fashion
+                and fandom collide. Explore stunning collections that transform
+                your favorite anime moments into wearable art. Redefine your
+                style with unique pieces that celebrate the essence of anime.
+                Visit now and immerse yourself in the world of anime-inspired
+                fashion
               </p>
             </div>
             <div className=" py-6  ">
@@ -198,7 +199,7 @@ export default function () {
                     <img
                       src={item.image}
                       alt={item.productName}
-                      className=" absolute px-5 w-[280px] h-[260px] md:w-[400px] md:h-[350px] mx-auto my-5 items-center md:rounded-xl "
+                      className=" absolute px-5 w-[300px] h-[260px] md:w-[400px] md:h-[350px] mx-auto my-5 items-center "
                     />
                     <h1 className="  relative text-center flex flex-col justify-between">
                       <span className=" bg-zinc-400 w-auto mx-auto rounded-sm md:mt-72 mt-52 text-black">

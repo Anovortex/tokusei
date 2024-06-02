@@ -4,6 +4,7 @@ import { ReactNode, useEffect, useState, FC } from "react";
 import Head from "next/head";
 import Header from "../layout/header";
 import Footer from "../layout/footer";
+import BackToTop from "../layout/ScrollTop";
 
 interface NavItem {
   label: string;
@@ -50,6 +51,7 @@ const Provider: FC<ProviderProps> = ({
           </>
         )}
       </div>
+      <BackToTop />
     </>
   );
 };
