@@ -197,9 +197,11 @@ const HomePage: React.FC = () => {
                     key={index}
                     className="bg-stone-900 rounded-2xl w-[300px] h-[370px] md:w-[360px] md:h-[410px] item-center"
                   >
-                    <img
+                    <Image
                       src={item.image}
                       alt={item.productName}
+                      width={300}
+                      height={300}
                       className="px-5 w-[250px] h-[250px] md:w-[300px] md:h-[300px] mx-auto my-5 items-center md:rounded-xl"
                     />
                     <h1 className="text-center flex flex-col justify-between">
