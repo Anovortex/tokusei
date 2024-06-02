@@ -2,17 +2,29 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
+import { IoLogoWhatsapp } from "react-icons/io5";
+import { SiGmail } from "react-icons/si";
 
 const socials = [
   {
     label: "facebook",
-    url: "https://facebook.com/",
+    url: "https://www.facebook.com/tokuseistore",
     icon: SlSocialFacebook,
   },
   {
     label: "Instagram",
-    url: "https://instagram.com/",
+    url: "https://www.instagram.com/tokuseishop/",
     icon: SlSocialInstagram,
+  },
+  {
+    label: "Whatsapp",
+    url: "https://wa.me/8801772206234",
+    icon: IoLogoWhatsapp,
+  },
+  {
+    label: "Email",
+    url: "mailto:tokuseishop@gmail.com",
+    icon: SiGmail,
   },
 ];
 
@@ -36,19 +48,17 @@ const Footer: React.FC<FooterProps> = ({
 }) => {
   return (
     <div className={`bg-stone-700 ${dark ? "dark-mode" : ""} `} id="contact">
-      <div className="w-[200px] mx-auto py-10">
+      <div className="w-[150px] mx-auto py-5">
         <Image src="/Logo/logo.png" width={372} height={368} alt="footerLogo" />
       </div>
-      <div className="mx-auto text-center items-center text-lg flex flex-col md:text-2xl xl:gap-5">
+      <div className="mx-auto text-center items-center text-lg flex flex-col md:text-xl xl:gap-5">
         <span>Ring Road, Mohammadpur, Dhaka-1207</span>
-        <a href="https://wa.me/8801772206234">+880 177 2206234</a>
-        <a href="mailto:tokuseishop@gmail.com">tokuseishop@gmail.com</a>
       </div>
-      <div className="item-center mx-auto py-10">
-        <div className="flex flex-row justify-center gap-5 md:text-xl">
+      <div className="item-center mx-auto py-5">
+        <div className="flex flex-row justify-center gap-5 md:text-base pb-5">
           {socials.map((social, index) => (
             <Link
-              className="hover:scale-150 transition-all text-2xl"
+              className="hover:scale-150 transition-all text-xl"
               href={social.url}
               key={index}
               target="_blank"
@@ -58,8 +68,8 @@ const Footer: React.FC<FooterProps> = ({
             </Link>
           ))}
         </div>
-        <div>
-          <div className="py-5 md:py-10 text-lg md:text-2xl flex flex-row justify-center gap-10">
+        {/* <div>
+          <div className="py-5 md:py-5 text-lg md:text-xl flex flex-row justify-center gap-10">
             {navItems.map((navItem, index) => (
               <Link href={navItem.url} key={index}>
                 <h1 className="lg:hover:scale-125 hover:text-stone-300 transition-all">
@@ -68,8 +78,8 @@ const Footer: React.FC<FooterProps> = ({
               </Link>
             ))}
           </div>
-        </div>
-        <div className="lg:py-6 mx-auto">
+        </div> */}
+        <div className=" mx-auto">
           <div className="text-center">
             <Link href="https://www.instagram.com/tokuseishop/">
               <div className="relative px-5 py-3 overflow-hidden font-medium text-white bg-transparent border border-gray-100 rounded-lg shadow-inner group inline-block">
