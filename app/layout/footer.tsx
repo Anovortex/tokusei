@@ -35,7 +35,7 @@ const Footer: React.FC<FooterProps> = ({
   navItems,
 }) => {
   return (
-    <div className={`bg-stone-700 ${dark ? "dark-mode" : ""} `}>
+    <div className={`bg-stone-700 ${dark ? "dark-mode" : ""} `} id="contact">
       <div className="w-[200px] mx-auto py-10">
         <Image src="/Logo/logo.png" width={372} height={368} alt="footerLogo" />
       </div>

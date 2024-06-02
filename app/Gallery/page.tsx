@@ -15,7 +15,7 @@ const navItems = [
   },
   {
     label: "Contact",
-    url: "/",
+    url: "#contact",
   },
 ];
 
@@ -126,20 +126,21 @@ export default function () {
               height={1080 / 1.5}
               alt="heroImage"
               layout=" responsive"
-              className=" absolute opacity-30 mx-auto md:h-[728px] h-[300px]"
+              className=" absolute opacity-30 mx-auto md:h-[728px] h-[350px] "
             />
           </div>
           <div className="relative md:py-48">
             <div className="  text-6xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-              TOKUSEI
+              Gallery
             </div>{" "}
             <div>
               <p className="text-sm w-5/6 md:w-[656px] text-center item-center mx-auto ">
-                Step into Anime Couture, where style meets storytelling. Explore
-                premium garments that blend comfort with character. Redefine
-                your wardrobe with timeless pieces inspired by your favorite
-                anime. Shop now and embrace the essence of anime-inspired
-                fashion.
+                Discover the Gallery at Tokusei: a visual journey where fashion
+                and fandom collide. Explore stunning collections that transform
+                your favorite anime moments into wearable art. Redefine your
+                style with unique pieces that celebrate the essence of anime.
+                Visit now and immerse yourself in the world of anime-inspired
+                fashion
               </p>
             </div>
             <div className=" py-6  ">
