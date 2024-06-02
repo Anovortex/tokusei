@@ -193,15 +193,15 @@ export default function () {
                 {topCollection.map((item, index) => (
                   <div
                     key={index}
-                    className=" relative bg-stone-900 rounded-2xl w-[300px] h-[370px] md:w-[360px] md:h-[400px] item-center "
+                    className=" relative bg-stone-900 rounded-2xl w-[300px] h-[300px] md:w-[360px] md:h-[400px] item-center "
                   >
                     <img
                       src={item.image}
                       alt={item.productName}
-                      className=" absolute px-5 w-[250px] h-[250px] md:w-[400px] md:h-[350px] mx-auto my-5 items-center md:rounded-xl "
+                      className=" absolute px-5 w-[280px] h-[260px] md:w-[400px] md:h-[350px] mx-auto my-5 items-center md:rounded-xl "
                     />
                     <h1 className="  relative text-center flex flex-col justify-between">
-                      <span className=" bg-zinc-400 w-auto mx-auto rounded-sm mt-72 text-black">
+                      <span className=" bg-zinc-400 w-auto mx-auto rounded-sm md:mt-72 mt-52 text-black">
                         Catagory: {item.productName}
                       </span>
                       <span className=" bg-zinc-400 w-24 mx-auto rounded-sm mt-2 text-black">
