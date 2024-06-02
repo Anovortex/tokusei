@@ -96,9 +96,10 @@ const Footer: React.FC<FooterProps> = ({
           </div>
         </div>
       </div>
-      <div className="pb-5 text-sm text-center mx-auto">
+      <div className=" text-sm text-center mx-auto">
         Copyright © 2024 Tokusei®. All rights reserved.
       </div>
+      <div className="text-xs text-center mx-auto">Maintained by HiziBusy</div>
     </div>
   );
 };
