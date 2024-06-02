@@ -199,7 +199,7 @@ export default function () {
                     <img
                       src={item.image}
                       alt={item.productName}
-                      className=" absolute px-5 w-[280px] h-[260px] md:w-[400px] md:h-[350px] mx-auto my-5 items-center md:rounded-xl "
+                      className=" absolute px-5 w-[300px] h-[260px] md:w-[400px] md:h-[350px] mx-auto my-5 items-center "
                     />
                     <h1 className="  relative text-center flex flex-col justify-between">
                       <span className=" bg-zinc-400 w-auto mx-auto rounded-sm md:mt-72 mt-52 text-black">
